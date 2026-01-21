@@ -12,13 +12,15 @@ radius = float(input("Enter radius of thr circle"))
 circumference_circle = 2*radius*3.14
 print(f"The circumference is:{circumference_circle:.2f}")
 
+
 print("---task 4: area of a circle---")
 radius = float(input("Enter the radius of the circle"))
 area_circle = radius*radius*3.14
 print(f"The area is:{area_circle:.2f}")
 
-
 print("---task:4 Area of the triangle---")
+
+
 base = float(input("Enter base: "))
 height = float(input("Enter height: "))
 area = 0.5* base* height
