@@ -1,0 +1,89 @@
+
+
+
+import math
+
+def apply_discount(original_price, coupon_val):
+    # using math (optional rounding example)
+    final_price = original_price - coupon_val
+    return math.floor(final_price)   # rounding down (just to use math)
+
+# Function calls
+result1 = apply_discount(50, 10)
+result2 = apply_discount(100, 25)
+
+print("Final Price 1:", result1)
+print("Final Price 2:", result2)
+
+
+
+import math
+
+log_data = ["200", "404", 500, "200", "timeout", "301", 500, "error", "200", 404]
+
+# Extract numeric values
+numeric_codes = list(
+    map(int, filter(lambda x: str(x).isdigit(), log_data))
+)
+
+# Unique values
+unique_codes = set(numeric_codes)
+
+# Maximum error
+max_error = max(unique_codes)
+
+# Average using math
+average = math.fsum(numeric_codes) / len(numeric_codes)
+
+print("Numeric Codes:", numeric_codes)
+print("Unique Codes:", unique_codes)
+print("Most Severe Error:", max_error)
+print("Average:", average)
+
+
+import math
+
+# 1. Material Estimation
+tiles = 14.2
+round_up = math.ceil(tiles)     # Round up
+round_down = math.floor(tiles)  # Round down
+
+print("Tiles to buy (round up):", round_up)
+print("Full tiles in row (round down):", round_down)
+
+# 2. Structural Calculations
+area = 49
+beam_length = math.sqrt(area)   # Square root
+
+side = 5
+volume = math.pow(side, 3)      # Power
+
+print("Beam Length:", beam_length)
+print("Tank Volume:", volume)
+
+# 3. Geometry Constants
+radius = 7
+circumference = 2 * math.pi * radius
+
+print("Circumference:", circumference)
+
+# 4. Angle Conversion
+angle_deg = 45
+angle_rad = math.radians(angle_deg)
+
+print("Angle in Radians:", angle_rad)
+
+
+
+import math
+
+# Input points
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+# Distance calculation
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print("Distance between two points:", distance)
